@@ -6,12 +6,14 @@ observ is a command line tool to inform you that new versions are available
 Installation
 ============
 .. code-block:: bash
-    $ python setup.py install
+
+    $python setup.py install
 
 or
 
 .. code-block:: bash
-    $ python3 setup.py install
+
+    $python3 setup.py install
 
 Available Desktop Environment
 =============================
@@ -22,6 +24,7 @@ Usage
 =====
 
 .. code-block:: bash
+
     $ observ --help
     Usage:
         observ [--notify NOTIFY] [--list]
