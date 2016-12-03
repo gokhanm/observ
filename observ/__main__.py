@@ -50,7 +50,7 @@ def main():
     if period is not None and notify is not None:
         user = config.section_key_value('cron', 'username')
         cron = Cron(user=user)
-        cmd = 'observ -n %s' % notify
+        cmd = '/usr/local/bin/observ -n %s' % notify
 
         if 'hourly' == period:
             cron.run(cmd=cmd, run_time='hourly')
