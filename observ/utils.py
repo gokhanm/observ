@@ -70,6 +70,8 @@ class Util():
             with redirect_stdout(f):
                 # result is False when command not found
                 if result2 is not False and len(result2) != 0:
+                    if PY3:
+                        result2 = result2.decode('utf-8')
                     print('Python 2.7.x pip outdated packages', result2, sep='\n')
                 else:
                     if result2 is False:
@@ -79,6 +81,8 @@ class Util():
 
                 # result is False when command not found
                 if result3 is not False and len(result3) != 0:
+                    if PY3:
+                        result3 = result3.decode('utf-8')
                     print('Python 3.x pip outdated packages', result3, sep='\n')
                 else:
                     if result3 is False:
